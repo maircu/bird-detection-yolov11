@@ -32,6 +32,8 @@ pip install -r requirements.txt
 
 ### 3. 视频检测
 
+将待检测视频放入 `video/` 文件夹，运行：
+
 ```bash
 python detect.py
 ```
@@ -98,9 +100,9 @@ bird-detection-yolov11/
 │   └── species_occlusion_v2/weights/best.pt # 二级品种识别模型（mAP50=0.856）
 │
 ├── 结果/                        # 检测结果示例图片
-├── video/                       # 测试视频（需自行放入）
-├── photo/                       # 图片检测输入（需自行放入）
-└── output/                      # 检测输出
+├── video/                       # 测试视频（放入mp4/avi文件后使用）
+├── photo/                       # 图片检测输入（放入jpg/png文件后使用）
+└── output/                      # 检测输出（自动生成）
 ```
 
 ## 数据集说明

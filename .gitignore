@@ -2,14 +2,19 @@
 datasets/
 archive/
 
-# 输出文件（排除视频，只保留图片结果）
+# 输出文件（排除视频，保留图片和.gitkeep）
 output/**/*.mp4
 output/**/*.avi
 output/**/*.mkv
 结果/**/*.mp4
 结果/**/*.avi
 结果/**/*.mkv
-photo/
+
+# video和photo只保留.gitkeep，其他文件不上传
+video/*
+!video/.gitkeep
+photo/*
+!photo/.gitkeep
 
 # Python缓存
 __pycache__/
@@ -26,9 +31,6 @@ desktop.ini
 .vscode/
 .idea/
 
-# 视频文件（太大）
-video/
-
 # 临时文件
 _archive/
 
@@ -37,7 +39,7 @@ _archive/
 可视化/
 引文/
 
-# 训练结果：忽略所有runs
+# 训练结果：忽略所有runs（best.pt通过force add上传）
 runs/
 
 # 预训练权重（可从网上下载）
