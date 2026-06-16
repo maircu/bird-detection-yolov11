@@ -2,8 +2,13 @@
 datasets/
 archive/
 
-# 输出文件
-output/
+# 输出文件（排除视频，只保留图片结果）
+output/**/*.mp4
+output/**/*.avi
+output/**/*.mkv
+结果/**/*.mp4
+结果/**/*.avi
+结果/**/*.mkv
 photo/
 
 # Python缓存
